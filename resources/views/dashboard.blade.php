@@ -1,15 +1,14 @@
 <x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
-            {{ __('Dashboard') }}
-        </h2>
+    <x-slot name="sectionName">
+        {{__('Home')}}
     </x-slot>
 
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-xl sm:rounded-lg">
-                <x-welcome />
-            </div>
-        </div>
-    </div>
+    <x-slot name="sectionId">home</x-slot>
+
+
+<main class="container flex-grow-1 p-4">
+    <header class="p-5">
+        <h5 class="display-5 header-section">¡Bienvenido, Nicolás Berdú!</h5>
+    </header>
+</main>
 </x-app-layout>
