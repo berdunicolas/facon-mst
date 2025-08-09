@@ -1,0 +1,11 @@
+<svg id="Componente_28_3" data-name="Componente 28 – 3" xmlns="http://www.w3.org/2000/svg" height="200" viewBox="0 0 1803 2179.203">
+    <path id="Rectángulo_50" data-name="Rectángulo 50" d="M36.941,0h4.618A36.941,36.941,0,0,1,78.5,36.941V678.034a4.618,4.618,0,0,1-4.618,4.618h0A73.882,73.882,0,0,1,0,608.77V36.941A36.941,36.941,0,0,1,36.941,0Z" transform="translate(901.001 499.755)" fill="#69001c"/>
+    <rect id="Rectángulo_48" data-name="Rectángulo 48" width="441" height="79" rx="39.5" transform="translate(1120.501 492.755) rotate(180)" fill="#69001c"/>
+    <path id="Trazado_4" data-name="Trazado 4" d="M19.655-.766,133.488-5.2c10.855-.423,19.312,9.918,18.888,23.1S142.81,42.1,131.955,42.526L18.122,46.964c-10.855.423-19.312-9.918-18.888-23.1S8.8-.343,19.655-.766Z" transform="matrix(0.985, -0.174, 0.174, 0.985, 820.722, 360.356)" fill="#69001c"/>
+    <path id="Trazado_3" data-name="Trazado 3" d="M19.655-.766,133.488-5.2c10.855-.423,19.312,9.918,18.888,23.1S142.81,42.1,131.955,42.526L18.122,46.964c-10.855.423-19.312-9.918-18.888-23.1S8.8-.343,19.655-.766Z" transform="matrix(0.985, -0.174, 0.174, 0.985, 820.722, 281.856)" fill="#69001c"/>
+    <path id="Trazado_2" data-name="Trazado 2" d="M19.655-.766,133.488-5.2c10.855-.423,19.312,9.918,18.888,23.1S142.81,42.1,131.955,42.526L18.122,46.964c-10.855.423-19.312-9.918-18.888-23.1S8.8-.343,19.655-.766Z" transform="matrix(0.985, -0.174, 0.174, 0.985, 820.722, 204.6)" fill="#69001c"/>
+    <circle id="Elipse_3" data-name="Elipse 3" cx="83" cy="83" r="83" transform="translate(816.001)" fill="#69001c"/>
+    <path id="Polígono_2" data-name="Polígono 2" d="M75.793,8.512a5,5,0,0,1,8.869,0L156.646,146.69a5,5,0,0,1-4.434,7.31H8.243a5,5,0,0,1-4.434-7.31Z" transform="translate(980.229 1344.407) rotate(180)" fill="#69001c"/>
+    <path id="Rectángulo_52" data-name="Rectángulo 52" d="M35.294,0h4.412A35.294,35.294,0,0,1,75,35.294v576.77A70.588,70.588,0,0,1,4.412,682.652h0A4.412,4.412,0,0,1,0,678.24V35.294A35.294,35.294,0,0,1,35.294,0Z" transform="translate(819.047 500.755)" fill="#69001c"/>
+    <text id="Facón" transform="translate(0 2027.204)" fill="#69001c" font-size="688" font-family="CenturyGothic-Bold, Century Gothic" font-weight="700" letter-spacing="-0.1em"><tspan x="0" y="0">Facón</tspan></text>
+</svg>

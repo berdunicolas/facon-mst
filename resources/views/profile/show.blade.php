@@ -1,45 +1,44 @@
 <x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
-            {{ __('Profile') }}
-        </h2>
+    <x-slot name="sectionName">
+        {{__('Profile')}}
     </x-slot>
 
-    <div>
-        <div class="max-w-7xl mx-auto py-10 sm:px-6 lg:px-8">
+    <x-slot name="sectionId">profile</x-slot>
+
+    <main class="container flex-grow-1 p-4">
+        <header class="p-5">
+            <h5 class="display-5 header-section">Perfil</h5>
+        </header>
+        <div class="mx-auto">
+        
             @if (Laravel\Fortify\Features::canUpdateProfileInformation())
-                @livewire('profile.update-profile-information-form')
-
-                <x-section-border />
+            @livewire('profile.update-profile-information-form')
             @endif
-
+            
+    
             @if (Laravel\Fortify\Features::enabled(Laravel\Fortify\Features::updatePasswords()))
-                <div class="mt-10 sm:mt-0">
-                    @livewire('profile.update-password-form')
-                </div>
-
-                <x-section-border />
+            <div class="mt-5">
+            @livewire('profile.update-password-form')
+            </div>    
             @endif
-
+        
             @if (Laravel\Fortify\Features::canManageTwoFactorAuthentication())
-                <div class="mt-10 sm:mt-0">
-                    @livewire('profile.two-factor-authentication-form')
-                </div>
-
-                <x-section-border />
+            <div class="mt-5">
+            @livewire('profile.two-factor-authentication-form')
+            </div>
             @endif
 
-            <div class="mt-10 sm:mt-0">
-                @livewire('profile.logout-other-browser-sessions-form')
+            <div class="mt-5">
+            @livewire('profile.logout-other-browser-sessions-form')
             </div>
+        
 
             @if (Laravel\Jetstream\Jetstream::hasAccountDeletionFeatures())
-                <x-section-border />
-
-                <div class="mt-10 sm:mt-0">
-                    @livewire('profile.delete-user-form')
-                </div>
+            <div class="mt-5">
+                @livewire('profile.delete-user-form')
+            </div>
             @endif
         </div>
-    </div>
+    </main>
+
 </x-app-layout>
