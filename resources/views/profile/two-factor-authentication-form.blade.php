@@ -8,7 +8,7 @@
     </x-slot>
 
     <x-slot name="content">
-        <h3>
+        <h4>
             @if ($this->enabled)
                 @if ($showingConfirmation)
                     {{ __('Finish enabling two factor authentication.') }}
@@ -18,7 +18,7 @@
             @else
                 {{ __('You have not enabled two factor authentication.') }}
             @endif
-        </h3>
+        </h4>
 
         <div class="mt-3">
             <p>

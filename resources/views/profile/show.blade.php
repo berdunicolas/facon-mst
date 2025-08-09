@@ -1,4 +1,4 @@
-<x-app-layout sectionId="profile">
+<x-app-layout>
     <x-slot name="sectionName">
         {{__('Profile')}}
     </x-slot>

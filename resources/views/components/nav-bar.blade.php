@@ -7,10 +7,16 @@
         <img src="{{asset('images/facon-minimalist-logo.svg')}}" class="minimalist-logo" alt="facon minimalist logo">
     </div>
     <ul class="nav flex-column pt-5 font-size-2">
-        <li class="nav-item mt-1 horizontal-red-gradient-bg {{$sectionId == 'home' ? 'selected' : ''}}">
-            <a href="{{route('admin.dashboard')}}" class="nav-link text-dark btn btn-light rounded-0">
-                <span class="nav-link-icon"><i class="bi bi-house"></i></span>
-                <span class="nav-link-text">Inicio</span>
+        <li class="nav-item mt-1 horizontal-red-gradient-bg {{$sectionId == 'dashboard' ? 'selected' : ''}}">
+            <a href="{{route('dashboard')}}" class="nav-link text-dark btn btn-light rounded-0">
+                <span class="nav-link-icon"><i class="bi bi-columns-gap"></i></span>
+                <span class="nav-link-text">{{__('Dashboard')}}</span>
+            </a>
+        </li>
+        <li class="nav-item mt-1 horizontal-red-gradient-bg {{$sectionId == 'teams' ? 'selected' : ''}}">
+            <a href="{{route('teams.index')}}" class="nav-link text-dark btn btn-light rounded-0">
+                <span class="nav-link-icon"><i class="bi bi-people"></i></span>
+                <span class="nav-link-text">{{__('Teams')}}</span>
             </a>
         </li>
     </ul>
@@ -20,17 +26,15 @@
                 <span class="nav-link-icon"><i class="">NB</i></span>
                 <span class="nav-link-text">{{auth()->user()->name}}</span>
             </a>
-            <ul class="font-size-1">
-                <ui class="nav-subordinate">
-                    <form method="POST" action="{{ route('logout') }}">
-                        @csrf
-                        <button  class="nav-link text-dark w-100 btn btn-light rounded-0">
-                            <span class="nav-link-icon"><i class="bi bi-box-arrow-right"></i></span>
-                            <span class="nav-link-text">Cerrar sesion</span>
-                        </button>
-                    </form>
-                </ui>
-            </ul>
+        </li>
+        <li class="nav-item horizontal-red-gradient-bg {{$sectionId == 'teams' ? 'selected' : ''}}">
+            <form method="POST" action="{{ route('logout') }}">
+                @csrf
+                <button  class="nav-link text-dark w-100 btn btn-light rounded-0">
+                    <span class="nav-link-icon"><i class="bi bi-box-arrow-left"></i></span>
+                    <span class="nav-link-text">Cerrar sesion</span>
+                </button>
+            </form>
         </li>
     </ul>
 

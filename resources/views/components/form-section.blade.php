@@ -8,7 +8,7 @@
 
     <div class="">
         <form wire:submit="{{ $submit }}">
-            <div class="px-4 py-5 {{ isset($actions) ? 'sm:rounded-tl-md sm:rounded-tr-md' : 'sm:rounded-md' }}">
+            <div class="px-4 py-4 {{ isset($actions) ? 'sm:rounded-tl-md sm:rounded-tr-md' : 'sm:rounded-md' }}">
                 <div class="grid grid-cols-6 gap-6">
                     {{ $form }}
                 </div>
