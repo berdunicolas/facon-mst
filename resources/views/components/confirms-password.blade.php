@@ -15,7 +15,8 @@
 </span>
 
 @once
-<x-dialog-modal wire:model.live="confirmingPassword">
+<x-dialog-modal wire:model.live="confirmingPassword" class="mt-4 px-0 bg-transparent border border-dark rounded-4">
+    
     <x-slot name="title">
         {{ $title }}
     </x-slot>
@@ -34,11 +35,11 @@
     </x-slot>
 
     <x-slot name="footer">
-        <x-secondary-button wire:click="stopConfirmingPassword" wire:loading.attr="disabled">
+        <x-secondary-button wire:click="stopConfirmingPassword" wire:loading.attr="disabled" >
             {{ __('Cancel') }}
         </x-secondary-button>
 
-        <x-button class="ms-3" dusk="confirm-password-button" wire:click="confirmPassword" wire:loading.attr="disabled">
+        <x-button class="ms-3" dusk="confirm-password-button" wire:click="confirmPassword" wire:loading.attr="disabled" class="btn-primary ms-3">
             {{ $button }}
         </x-button>
     </x-slot>
