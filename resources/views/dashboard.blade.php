@@ -7,7 +7,7 @@
 
 
 <main class="container flex-grow-1 p-4">
-    <header class="p-5">
+    <header class="py-5">
         <h5 class="display-5 header-section">{{__('Welcome')}}, {{auth()->user()->name}}!</h5>
     </header>
 </main>

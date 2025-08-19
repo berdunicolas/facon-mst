@@ -1,6 +1,6 @@
 @props(['submit'])
 
-<div class="bg-light rounded-4 shadow">
+<div class="bg-light rounded-1 shadow">
     <x-section-title>
         <x-slot name="title">{{ $title }}</x-slot>
         <x-slot name="description">{{ $description }}</x-slot>

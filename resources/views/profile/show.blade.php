@@ -6,7 +6,7 @@
     <x-slot name="sectionId">profile</x-slot>
 
     <main class="container flex-grow-1 p-4">
-        <header class="p-5">
+        <header class="py-5">
             <h5 class="display-5 header-section">Perfil</h5>
         </header>
         <div class="mx-auto">

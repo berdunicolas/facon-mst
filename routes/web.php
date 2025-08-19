@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\TeamController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -20,4 +21,5 @@ Route::middleware([
 
     Route::get('/profile', [ProfileController::class, 'show'])->name('profile.show');
     Route::get('/teams', [TeamController::class, 'index'])->name('teams.index');
+    Route::get('/users', [UserController::class, 'index'])->name('users.index');
 });

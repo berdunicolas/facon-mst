@@ -19,6 +19,12 @@
                 <span class="nav-link-text">{{__('Teams')}}</span>
             </a>
         </li>
+        <li class="nav-item mt-1 horizontal-red-gradient-bg {{$sectionId == 'users' ? 'selected' : ''}}">
+            <a href="{{route('users.index')}}" class="nav-link text-dark btn btn-light rounded-0">
+                <span class="nav-link-icon"><i class="bi bi-person"></i></span>
+                <span class="nav-link-text">{{__('Users')}}</span>
+            </a>
+        </li>
     </ul>
     <ul class="nav flex-column mt-auto mb-4 font-size-2">
         <li class="nav-item {{$sectionId == 'profile' ? 'selected' : ''}}">

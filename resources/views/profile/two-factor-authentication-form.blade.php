@@ -68,7 +68,7 @@
                     </p>
                 </div>
 
-                <div class="d-flex flex-column mt-2 p-4 bg-transparent border border-dark rounded-4">
+                <div class="d-flex flex-column mt-2 p-4 bg-transparent border border-dark rounded-1">
                     @foreach (json_decode(decrypt($this->user->two_factor_recovery_codes), true) as $code)
                         <div>{{ $code }}</div>
                     @endforeach
